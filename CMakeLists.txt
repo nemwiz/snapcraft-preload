@@ -16,9 +16,11 @@
 
 cmake_minimum_required(VERSION 3.2)
 
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
-endif(NOT CMAKE_BUILD_TYPE)
+#if(NOT CMAKE_BUILD_TYPE)
+#    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
+#endif(NOT CMAKE_BUILD_TYPE)
+
+set(CMAKE_BUILD_TYPE DEBUG)
 
 set(SNAPCRAFT_PRELOAD "snapcraft-preload")
 set(LIBNAME "lib${SNAPCRAFT_PRELOAD}")
